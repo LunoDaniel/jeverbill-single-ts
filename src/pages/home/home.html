@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Jever Bill<img class="img-topo" src="assets/imgs/logo-top.png" width="15%" height="15%" /> 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list >
+  <button ion-item *ngFor="let chopp of chopplist" item-start (click)="alterarChoppes(chopp)" >
+    <ion-icon name="beer" item-start></ion-icon>
+    <h1> {{ chopp.choppName }}  </h1>
+    <h3> {{ chopp.style.name }}  </h3>
+    <div *ngFor="let type of chopp.types">
+      <div align="right">
+          {{ type.volume }} <ion-badge class="badge-color" item-end> {{ 0 }} </ion-badge>
+      </div>
+    </div>
+  </button>
+ </ion-list>
+ <div align="center">
+    <button ion-button icon-right class="btn-color" >
+      Total
+      <ion-icon name="cash"></ion-icon>
+    </button>
+    <button ion-button icon-right class="btn-color" >
+      Limpar
+      <ion-icon name="close"></ion-icon>
+    </button>
+  </div>
+</ion-content>
