@@ -11,16 +11,16 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class BaseProvider {
 
-  private serverUrl = 'http://localhost:8088/chopp/list';
+  private serverUrl = 'http://localhost:8088/';
   private http: HttpClient;
 
   constructor(protected injector: Injector) {
     this.http = this.injector.get(HttpClient);
   }
 
-  protected httpGet() {
+  protected httpGet(resource: string) {
 
-    let url = this.serverUrl;
+    let url = this.serverUrl + resource;
 
     let options = {  };
 

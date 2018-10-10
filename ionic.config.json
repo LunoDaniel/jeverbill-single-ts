@@ -1,7 +1,0 @@
-{
-  "name": "jever-bill",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}

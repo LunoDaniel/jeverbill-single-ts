@@ -17,7 +17,7 @@ export class ChoppsProvider extends BaseProvider{
   }
 
   public getAllChopps(){
-    return this.httpGet().then(data => {
+    return this.httpGet('chopp/list').then(data => {
         this.choppList = data;
         return this.choppList;
     });
