@@ -1,5 +1,6 @@
 import { Injectable, Injector } from '@angular/core';
 import { BaseProvider } from '../base/base';
+import { JeverChopp } from '../../domain/chopps/JeverChopp';
 
 /*
   Generated class for the ChoppsProvider provider.
@@ -9,7 +10,7 @@ import { BaseProvider } from '../base/base';
 */
 @Injectable()
 export class ChoppsProvider extends BaseProvider{
-  private choppList: any;
+  private choppList: Array<JeverChopp>;
 
   constructor(injector: Injector) {
     super(injector);

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Drink } from '../../domain/Drink';
 
 /**
  * Generated class for the DrinksPage page.
@@ -16,9 +15,6 @@ import { Drink } from '../../domain/Drink';
 })
 export class DrinksPage {
 
-  public drink: Drink;
-  public drinks: Array<Drink> = new Array();
-  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
