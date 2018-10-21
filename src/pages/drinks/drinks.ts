@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Drink } from '../../domain/Drink';
+import { Drink } from '../../domain/drinks/Drink';
 
 /**
  * Generated class for the DrinksPage page.

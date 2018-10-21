@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ChoppsProvider } from '../../providers/chopps/chopps';
+import { JeverChopp } from '../../domain/chopps/JeverChopp';
 
 @Component({
   selector: 'page-home',
@@ -8,9 +9,10 @@ import { ChoppsProvider } from '../../providers/chopps/chopps';
 })
 export class HomePage {
 
-  public chopplist: any;
+  public chopplist: Array<JeverChopp>;
 
   constructor(public navCtrl: NavController, private choppProvider:  ChoppsProvider) {
+    this.chopplist= new Array<JeverChopp>();
     this.listChopp();
   }
 
