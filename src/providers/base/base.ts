@@ -29,6 +29,26 @@ export class BaseProvider {
         .catch(error => this.handleError(error));
   }
 
+  protected httpPost(resource: string, data: any) {
+    let url = this.serverUrl + resource;
+
+    let options = {  };
+
+    return this.http.post(url, data, options).toPromise()
+        .then(res => this.handleSuccess(res))
+        .catch(error => this.handleError(error));
+  }
+
+  protected httpPut(resource: string, data: any) {
+    let url = this.serverUrl + resource;
+
+    let options = {  };
+
+    return this.http.put(url, data, options).toPromise()
+        .then(res => this.handleSuccess(res))
+        .catch(error => this.handleError(error));
+  }
+
   private handleSuccess(res) {
     return res;
   }

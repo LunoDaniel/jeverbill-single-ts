@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ChoppsProvider } from '../../providers/chopps/chopps';
-import { JeverChopp } from '../../domain/chopps/JeverChopp';
+import { ChoppPage } from '../chopp/chopp';
 
 @Component({
   selector: 'page-home',
@@ -9,23 +8,17 @@ import { JeverChopp } from '../../domain/chopps/JeverChopp';
 })
 export class HomePage {
 
-  public chopplist: Array<JeverChopp>;
+  constructor(public navCtrl: NavController) {
 
-  constructor(public navCtrl: NavController, private choppProvider:  ChoppsProvider) {
-    this.chopplist= new Array<JeverChopp>();
-    this.listChopp();
   }
 
-  public listChopp(){
-    this.choppProvider.getAllChopps()
-      .then(success.bind(this)).catch(error.bind(this));
-
-    function success(data) {
-      this.chopplist = data;
-    }
-
-    function error(error) {
-      console.log("listService - Error:" + error);
-    }
+  public openBillPage(){
+    
   }
+  public openChoppPage(){
+    this.navCtrl.push(ChoppPage);
+  }
+  public openDrinkPage(){}
+  public openFoodPage(){}
+  public closeMenu(){}
 }

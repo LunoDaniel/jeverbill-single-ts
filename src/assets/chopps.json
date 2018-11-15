@@ -1,0 +1,76 @@
+[
+    {
+        "choppId": 1,
+        "choppName": "Cristal",
+        "types": [
+            {
+                "id": 1,
+                "value": 7.4,
+                "volume": "300ml"
+            },
+            {
+                "id": 2,
+                "value": 11.4,
+                "volume": "500ml"
+            }
+        ],
+        "style": {
+            "styleId": 1,
+            "name": "Pilsen",
+            "ibu": 12,
+            "alc": 4.5
+        },
+        "empty": false
+    },
+    {
+        "choppId": 2,
+        "choppName": "Black",
+        "types": [
+            {
+                "id": 3,
+                "value": 7.4,
+                "volume": "300ml"
+            },
+            {
+                "id": 4,
+                "value": 11.4,
+                "volume": "500ml"
+            }
+        ],
+        "style": {
+            "styleId": 2,
+            "name": "Pilsen",
+            "ibu": 22,
+            "alc": 4
+        },
+        "empty": false
+    },
+    {
+        "choppId": 3,
+        "choppName": "Witte",
+        "types": [
+            {
+                "id": 5,
+                "value": 7.4,
+                "volume": "300ml"
+            },
+            {
+                "id": 6,
+                "value": 11.4,
+                "volume": "500ml"
+            },
+            {
+                "id": 7,
+                "value": 17.4,
+                "volume": "750ml"
+            }
+        ],
+        "style": {
+            "styleId": 3,
+            "name": "Trigo",
+            "ibu": 20,
+            "alc": 5
+        },
+        "empty": false
+    }
+]

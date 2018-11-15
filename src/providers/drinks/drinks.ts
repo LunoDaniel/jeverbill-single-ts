@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Injector } from '@angular/core';
+import { BaseProvider } from '../base/base';
 
 /*
   Generated class for the DrinksProvider provider.
@@ -8,10 +8,10 @@ import { Injectable } from '@angular/core';
   and Angular DI.
 */
 @Injectable()
-export class DrinksProvider {
+export class DrinksProvider extends BaseProvider{
 
-  constructor(public http: HttpClient) {
-    console.log('Hello DrinksProvider Provider');
+  constructor(injector: Injector) {
+    super(injector);
   }
 
 }

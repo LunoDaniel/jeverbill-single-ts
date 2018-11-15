@@ -1,3 +1,4 @@
+import { ChoppPageModule } from './../pages/chopp/chopp.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -20,6 +21,7 @@ import { BaseProvider } from '../providers/base/base';
   imports: [
     BrowserModule,
     DrinksPageModule,
+    ChoppPageModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
